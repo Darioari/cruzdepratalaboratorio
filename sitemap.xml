@@ -4,10 +4,26 @@
 
   <url>
     <loc>https://cruzdepratalaboratorio.com.br/</loc>
-    <lastmod>2026-05-24</lastmod>
+    <lastmod>2026-06-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://cruzdepratalaboratorio.com.br/" />
+  </url>
+
+  <url>
+    <loc>https://cruzdepratalaboratorio.com.br/blog/</loc>
+    <lastmod>2026-06-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://cruzdepratalaboratorio.com.br/blog/" />
+  </url>
+
+  <url>
+    <loc>https://cruzdepratalaboratorio.com.br/blog/laboratorio-e-clinica-medica-em-granada-sp</loc>
+    <lastmod>2026-06-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://cruzdepratalaboratorio.com.br/blog/laboratorio-e-clinica-medica-em-granada-sp" />
   </url>
 
 </urlset>
