@@ -513,6 +513,7 @@
     .service-card {
       background: white; border: 1px solid var(--gray-200); border-radius: var(--radius-md);
       padding: 2rem; transition: var(--transition); position: relative; overflow: hidden;
+      scroll-margin-top: 80px;
     }
     .service-card::before {
       content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
@@ -1057,8 +1058,7 @@
         <p>Rastreamento e acompanhamento oncológico com PSA, CA 125, CA 19-9, CEA, alfafetoproteína e outros. Suporte preciso ao diagnóstico clínico.</p>
       </article>
 
-      <a id="clinico-geral" class="anchor-offset"></a>
-      <article class="service-card reveal" role="listitem">
+      <article class="service-card reveal" id="clinico-geral" role="listitem">
         <div class="service-icon" aria-hidden="true"><i class="fas fa-user-md"></i></div>
         <h3>Consulta Médica — Clínico Geral</h3>
         <p>Atendimento médico especializado com foco no seu bem-estar. Profissionais qualificados em clínico geral e diversas especialidades com diagnóstico preciso e tratamento humanizado.</p>
@@ -1088,15 +1088,13 @@
         <p>Sexagem fetal a partir de 8 semanas de gestação e teste de paternidade com total sigilo, precisão e segurança para sua família.</p>
       </article>
 
-      <a id="medicina-trabalho" class="anchor-offset"></a>
-      <article class="service-card reveal" role="listitem">
+      <article class="service-card reveal" id="medicina-trabalho" role="listitem">
         <div class="service-icon" aria-hidden="true"><i class="fas fa-briefcase-medical"></i></div>
         <h3>Medicina do Trabalho</h3>
         <p>Exames ocupacionais completos para sua empresa, incluindo admissionais, periódicos e demissionais. Emitimos ASO com rapidez e total conformidade com as normas regulamentadoras (NR-7).</p>
       </article>
 
-      <a id="admissional" class="anchor-offset"></a>
-      <article class="service-card reveal" role="listitem">
+      <article class="service-card reveal" id="admissional" role="listitem">
         <div class="service-icon" aria-hidden="true"><i class="fas fa-file-contract"></i></div>
         <h3>Exames Admissionais</h3>
         <p>Exames admissionais para contratação de funcionários com emissão de ASO (Atestado de Saúde Ocupacional) ágil e seguro, garantindo a regularidade trabalhista da sua empresa.</p>
