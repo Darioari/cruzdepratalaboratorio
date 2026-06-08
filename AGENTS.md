@@ -2,8 +2,8 @@
 
 ## Estrutura
 
-- Listagem: `blog/index.html`
-- Posts individuais: `blog/nome-do-post.html`
+- Listagem: `blog-cruz-de-prata/index.html`
+- Posts individuais: `blog-cruz-de-prata/nome-do-post.html`
 
 ## Regras para cada postagem
 
@@ -50,7 +50,7 @@
 <p class="post-featured-caption">Legenda da imagem</p>
 ```
 
-5. **Card na listagem** (`blog/index.html`):
+5. **Card na listagem** (`blog-cruz-de-prata/index.html`):
 
 ```html
 <article class="blog-card">
