@@ -33,7 +33,7 @@
 
   <!-- ═══════════════════ SEO META TAGS ═══════════════════ -->
   <title>Cruz de Prata Laboratório e Clínica Médica | Nova Granada - SP</title>
-  <meta name="description" content="Cruz de Prata Laboratório e Clínica Médica em Nova Granada - SP. Mais de 800 tipos de exames, consultas médicas, resultados online. Av. Osterno Nogueira Franco, 890. Tel: (17) 3262-0707." />
+  <meta name="description" content="Cruz de Prata Laboratório e Clínica Médica em Nova Granada - SP. Mais de 800 tipos de exames, consultas médicas e resultados online. Av. Osterno Nogueira Franco, 890." />
   <meta name="keywords" content="laboratório Nova Granada SP, exames laboratório Nova Granada, Cruz de Prata Laboratório, clínica médica Nova Granada, hemograma Nova Granada, exame de sangue Nova Granada, laboratório clínico SP" />
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
   <meta name="author" content="Cruz de Prata Laboratório e Clínica Médica" />
@@ -125,7 +125,9 @@
       {"@type": "MedicalTest", "name": "Bioquímica Clínica"},
       {"@type": "MedicalTest", "name": "Urinálise"},
       {"@type": "MedicalTest", "name": "Sexagem Fetal e DNA"},
-      {"@type": "MedicalTherapy", "name": "Consulta Médica"}
+      {"@type": "MedicalTest", "name": "Exames Admissionais"},
+      {"@type": "MedicalTherapy", "name": "Consulta Médica"},
+      {"@type": "MedicalTherapy", "name": "Medicina do Trabalho"}
     ],
     "sameAs": [
       "https://maps.app.goo.gl/nqeuEpX3BNymrHK7A",
@@ -776,6 +778,12 @@
     .section-header h2     { margin-bottom: .75rem; }
     .section-header p      { font-size: 1.05rem; }
 
+    /* ── ANCHOR OFFSET (sticky header) ── */
+    .anchor-offset {
+      display: block; position: relative; top: -80px;
+      visibility: hidden; pointer-events: none;
+    }
+
     /* ── SCROLL ANIMATION ── */
     .reveal { opacity: 0; transform: translateY(24px); transition: opacity .6s ease, transform .6s ease; }
     .reveal.visible { opacity: 1; transform: none; }
@@ -970,6 +978,7 @@
 <!-- ══════════════════════════════════════════
      SERVIÇOS
 ══════════════════════════════════════════ -->
+<a id="exames" class="anchor-offset"></a>
 <section class="section" id="servicos" aria-labelledby="services-title">
   <div class="container">
     <div class="section-header section-header--center reveal">
@@ -1004,10 +1013,11 @@
         <p>Rastreamento e acompanhamento oncológico com PSA, CA 125, CA 19-9, CEA, alfafetoproteína e outros. Suporte preciso ao diagnóstico clínico.</p>
       </article>
 
+      <a id="clinico-geral" class="anchor-offset"></a>
       <article class="service-card reveal" role="listitem">
         <div class="service-icon" aria-hidden="true"><i class="fas fa-user-md"></i></div>
-        <h3>Consulta Médica</h3>
-        <p>Atendimento médico especializado com foco no seu bem-estar. Profissionais qualificados em diversas especialidades com diagnóstico preciso e tratamento humanizado.</p>
+        <h3>Consulta Médica — Clínico Geral</h3>
+        <p>Atendimento médico especializado com foco no seu bem-estar. Profissionais qualificados em clínico geral e diversas especialidades com diagnóstico preciso e tratamento humanizado.</p>
       </article>
 
       <article class="service-card reveal" role="listitem">
@@ -1032,6 +1042,20 @@
         <div class="service-icon" aria-hidden="true"><i class="fas fa-baby"></i></div>
         <h3>Sexagem Fetal &amp; DNA</h3>
         <p>Sexagem fetal a partir de 8 semanas de gestação e teste de paternidade com total sigilo, precisão e segurança para sua família.</p>
+      </article>
+
+      <a id="medicina-trabalho" class="anchor-offset"></a>
+      <article class="service-card reveal" role="listitem">
+        <div class="service-icon" aria-hidden="true"><i class="fas fa-briefcase-medical"></i></div>
+        <h3>Medicina do Trabalho</h3>
+        <p>Exames ocupacionais completos para sua empresa, incluindo admissionais, periódicos e demissionais. Emitimos ASO com rapidez e total conformidade com as normas regulamentadoras (NR-7).</p>
+      </article>
+
+      <a id="admissional" class="anchor-offset"></a>
+      <article class="service-card reveal" role="listitem">
+        <div class="service-icon" aria-hidden="true"><i class="fas fa-file-contract"></i></div>
+        <h3>Exames Admissionais</h3>
+        <p>Exames admissionais para contratação de funcionários com emissão de ASO (Atestado de Saúde Ocupacional) ágil e seguro, garantindo a regularidade trabalhista da sua empresa.</p>
       </article>
 
     </div>
@@ -1270,6 +1294,7 @@
 <!-- ══════════════════════════════════════════
      CTA
 ══════════════════════════════════════════ -->
+<a id="agendar" class="anchor-offset"></a>
 <section class="cta-section" id="checkup" aria-labelledby="cta-title">
   <div class="container">
     <h2 id="cta-title">Agende seus exames agora</h2>
@@ -1441,9 +1466,12 @@
           <li><a href="#servicos">Exames Hormonais</a></li>
           <li><a href="#servicos">Imunologia e Sorologias</a></li>
           <li><a href="#servicos">Marcadores Tumorais</a></li>
-          <li><a href="#servicos">Consulta Médica</a></li>
+          <li><a href="#clinico-geral">Consulta Médica — Clínico Geral</a></li>
+          <li><a href="#medicina-trabalho">Medicina do Trabalho</a></li>
+          <li><a href="#admissional">Exames Admissionais</a></li>
           <li><a href="#servicos">Exame Toxicológico</a></li>
           <li><a href="#servicos">Sexagem Fetal &amp; DNA</a></li>
+          <li><a href="#agendar">Agende seus exames</a></li>
         </ul>
       </div>
 
