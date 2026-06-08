@@ -752,8 +752,8 @@
       background: var(--gray-800); color: rgba(255,255,255,.75); padding: 4rem 0 2rem;
     }
     .footer-grid {
-      display: grid; grid-template-columns: 2fr 1fr 1fr;
-      gap: 3rem; margin-bottom: 3rem;
+      display: grid; grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 2rem; margin-bottom: 3rem;
     }
     .footer-brand { display: flex; flex-direction: column; gap: 1rem; }
     .footer-logo  { display: flex; align-items: center; gap: .75rem; }
@@ -791,6 +791,14 @@
       font-size: .75rem; color: rgba(255,255,255,.7);
     }
     .badge i { color: var(--accent); }
+    .footer-heart {
+      color: #ff3366; animation: pulse-heart 1.5s ease-in-out infinite;
+      display: inline-block;
+    }
+    @keyframes pulse-heart {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.25); }
+    }
 
     /* ── WHATSAPP FLOAT ── */
     .whatsapp-float {
@@ -1502,32 +1510,32 @@
       </div>
 
       <div class="footer-col">
-        <h4>Serviços</h4>
+        <h4>Links</h4>
         <ul class="footer-links" role="list">
-          <li><a href="#servicos">Exames Laboratoriais</a></li>
-          <li><a href="#servicos">Exames Hormonais</a></li>
-          <li><a href="#servicos">Imunologia e Sorologias</a></li>
-          <li><a href="#servicos">Marcadores Tumorais</a></li>
-          <li><a href="#clinico-geral">Consulta Médica — Clínico Geral</a></li>
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#faq">Dúvidas</a></li>
+          <li><a href="#contato">Contato</a></li>
+          <li><a href="blog-cruz-de-prata/">Blog</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Serviço</h4>
+        <ul class="footer-links" role="list">
+          <li><a href="#exames">Exames Laboratoriais</a></li>
+          <li><a href="#clinico-geral">Clínico Geral</a></li>
           <li><a href="#medicina-trabalho">Medicina do Trabalho</a></li>
-          <li><a href="#admissional">Exames Admissionais</a></li>
-          <li><a href="#servicos">Exame Toxicológico</a></li>
-          <li><a href="#servicos">Sexagem Fetal &amp; DNA</a></li>
           <li><a href="#agendar">Agende seus exames</a></li>
         </ul>
       </div>
 
       <div class="footer-col">
-        <h4>Informações</h4>
+        <h4>Contato</h4>
         <ul class="footer-links" role="list">
-          <li><a href="#sobre">Sobre o Laboratório</a></li>
-          <li><a href="#faq">Dúvidas Frequentes</a></li>
-          <li><a href="#contato">Localização</a></li>
-          <li><a href="blog-cruz-de-prata/">Blog</a></li>
           <li><a href="https://wa.me/551732620705" target="_blank" rel="noopener noreferrer" onclick="return gtag_report_conversion(this.href)">WhatsApp: (17) 3262-0705</a></li>
-          <li><a href="tel:+551732620707" onclick="return gtag_report_conversion(this.href)">Telefone Fixo: (17) 3262-0707</a></li>
-          <li><a href="https://www.instagram.com/cruzdepratalaboratorio/" target="_blank" rel="noopener noreferrer">Instagram: @cruzdepratalaboratorio</a></li>
-          <li><a href="https://www.facebook.com/labcruzdeprata/?locale=pt_BR" target="_blank" rel="noopener noreferrer">Facebook: /labcruzdeprata</a></li>
+          <li><a href="tel:+551732620707" onclick="return gtag_report_conversion(this.href)">Telefone: (17) 3262-0707</a></li>
           <li><a href="https://maps.app.goo.gl/nqeuEpX3BNymrHK7A" target="_blank" rel="noopener noreferrer">Ver no Google Maps</a></li>
         </ul>
       </div>
@@ -1535,7 +1543,7 @@
     </div>
 
     <div class="footer-bottom">
-      <p>© 2026 Cruz de Prata Laboratório e Clínica Médica — Nova Granada - SP · Todos os direitos reservados.</p>
+      <p>© 2026 Cruz de Prata Laboratório e Clínica Médica — Nova Granada - SP &middot; Site feito com <i class="fas fa-heart footer-heart"></i> pela <a href="https://dpmidias.com/" target="_blank" rel="noopener" style="color:rgba(255,255,255,.65);">DPMidia</a></p>
       <div class="footer-badges" aria-label="Selos de qualidade">
         <span class="badge"><i class="fas fa-shield-alt" aria-hidden="true"></i> Dados Seguros</span>
         <span class="badge"><i class="fas fa-wheelchair" aria-hidden="true"></i> Acessível</span>
