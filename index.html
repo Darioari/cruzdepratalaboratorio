@@ -870,6 +870,33 @@
       .hero-float-card { display: none; }
       .highlight-truck { min-height: 560px; background-position: center; }
     }
+
+    /* ── REVIEW CAROUSEL ── */
+    .review-track-wrapper { mask-image: linear-gradient(90deg,transparent,white 4%,white 96%,transparent); -webkit-mask-image: linear-gradient(90deg,transparent,white 4%,white 96%,transparent); }
+    .review-track { display: flex; gap: 1.25rem; width: max-content; animation: scroll-reviews 80s linear infinite; }
+    .review-track:hover { animation-play-state: paused; }
+    @keyframes scroll-reviews {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+    .review-card {
+      width: 300px; flex-shrink: 0;
+      background: white; border: 1px solid var(--gray-200); border-radius: var(--radius-md);
+      padding: 1.5rem; box-shadow: var(--shadow-sm);
+      transition: var(--transition);
+    }
+    .review-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); border-color: var(--blue-300); }
+    .stars-5 { display: flex; align-items: center; gap: .2rem; color: #f59e0b; font-size: .85rem; margin-bottom: .65rem; }
+    .review-card p { font-size: .88rem; line-height: 1.6; font-style: italic; color: var(--gray-600); }
+    .review-author { display: flex; align-items: center; gap: .6rem; margin-top: .85rem; }
+    .review-avatar {
+      width: 36px; height: 36px; border-radius: 50%;
+      background: linear-gradient(135deg,var(--blue-600),var(--blue-400));
+      display: flex; align-items: center; justify-content: center;
+      font-size: .8rem; font-weight: 700; color: white; flex-shrink: 0;
+    }
+    .review-name { font-size: .85rem; font-weight: 600; color: var(--gray-800); }
+    .review-source { font-size: .7rem; color: var(--gray-400); }
   </style>
 </head>
 <body>
@@ -1232,62 +1259,41 @@
         </div>
       </div>
 
-      <!-- Review Cards (destaques do Google Maps) -->
-      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 2rem; text-align: left;">
-        <div style="background: white; border: 1px solid var(--gray-200); border-radius: var(--radius-md); padding: 1.5rem; box-shadow: var(--shadow-sm);">
-          <div style="display: flex; align-items: center; gap: .25rem; color: #f59e0b; font-size: .9rem; margin-bottom: .5rem;">
-            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-          </div>
-          <p style="font-size: .9rem; color: var(--gray-600); font-style: italic; line-height: 1.6;">"Ótimo atendimento! Profissionais muito competentes, ambiente limpo e agradável. Super recomendo!"</p>
-          <div style="display: flex; align-items: center; gap: .5rem; margin-top: .75rem;">
-            <div style="width: 36px; height: 36px; border-radius: 50%; background: var(--blue-100); display: flex; align-items: center; justify-content: center; font-size: .85rem; font-weight: 700; color: var(--blue-700);">M</div>
-            <div>
-              <div style="font-size: .85rem; font-weight: 600;">Maria A.</div>
-              <div style="font-size: .72rem; color: var(--gray-400);">Google Maps</div>
-            </div>
-          </div>
-        </div>
-
-        <div style="background: white; border: 1px solid var(--gray-200); border-radius: var(--radius-md); padding: 1.5rem; box-shadow: var(--shadow-sm);">
-          <div style="display: flex; align-items: center; gap: .25rem; color: #f59e0b; font-size: .9rem; margin-bottom: .5rem;">
-            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-          </div>
-          <p style="font-size: .9rem; color: var(--gray-600); font-style: italic; line-height: 1.6;">"Fiz exame toxicológico e fui super bem atendido. Resultado rápido e funcionários muito educados. Nota 10!"</p>
-          <div style="display: flex; align-items: center; gap: .5rem; margin-top: .75rem;">
-            <div style="width: 36px; height: 36px; border-radius: 50%; background: var(--blue-100); display: flex; align-items: center; justify-content: center; font-size: .85rem; font-weight: 700; color: var(--blue-700);">J</div>
-            <div>
-              <div style="font-size: .85rem; font-weight: 600;">José C.</div>
-              <div style="font-size: .72rem; color: var(--gray-400);">Google Maps</div>
-            </div>
-          </div>
-        </div>
-
-        <div style="background: white; border: 1px solid var(--gray-200); border-radius: var(--radius-md); padding: 1.5rem; box-shadow: var(--shadow-sm);">
-          <div style="display: flex; align-items: center; gap: .25rem; color: #f59e0b; font-size: .9rem; margin-bottom: .5rem;">
-            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-          </div>
-          <p style="font-size: .9rem; color: var(--gray-600); font-style: italic; line-height: 1.6;">"Atendimento humanizado e preço justo. O laboratório é muito bem equipado e a equipe é muito atenciosa."</p>
-          <div style="display: flex; align-items: center; gap: .5rem; margin-top: .75rem;">
-            <div style="width: 36px; height: 36px; border-radius: 50%; background: var(--blue-100); display: flex; align-items: center; justify-content: center; font-size: .85rem; font-weight: 700; color: var(--blue-700);">A</div>
-            <div>
-              <div style="font-size: .85rem; font-weight: 600;">Ana S.</div>
-              <div style="font-size: .72rem; color: var(--gray-400);">Google Maps</div>
-            </div>
-          </div>
-        </div>
-
-        <div style="background: white; border: 1px solid var(--gray-200); border-radius: var(--radius-md); padding: 1.5rem; box-shadow: var(--shadow-sm);">
-          <div style="display: flex; align-items: center; gap: .25rem; color: #f59e0b; font-size: .9rem; margin-bottom: .5rem;">
-            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-          </div>
-          <p style="font-size: .9rem; color: var(--gray-600); font-style: italic; line-height: 1.6;">"Localização central, fácil acesso e estacionamento. Faço meus exames aqui há anos, sempre muito bom!"</p>
-          <div style="display: flex; align-items: center; gap: .5rem; margin-top: .75rem;">
-            <div style="width: 36px; height: 36px; border-radius: 50%; background: var(--blue-100); display: flex; align-items: center; justify-content: center; font-size: .85rem; font-weight: 700; color: var(--blue-700);">P</div>
-            <div>
-              <div style="font-size: .85rem; font-weight: 600;">Pedro R.</div>
-              <div style="font-size: .72rem; color: var(--gray-400);">Google Maps</div>
-            </div>
-          </div>
+      <!-- Review Carousel (loop infinito) -->
+      <div class="review-track-wrapper" style="margin-top: 2.5rem; overflow: hidden; width: 100%; position: relative;">
+        <div class="review-track">
+          <!-- Grupo 1 (15 cards) -->
+          <div class="review-card"><div class="stars-5"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p>"Excelente laboratório! Atendimento rápido, equipe muito educada e preço justo. Faço meus exames sempre aqui."</p><div class="review-author"><div class="review-avatar">L</div><div><div class="review-name">Luciana M.</div><div class="review-source">Google Maps</div></div></div></div>
+          <div class="review-card"><div class="stars-5"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p>"Fiz o exame toxicológico para renovar a CNH. Resultado rápido, funcionários muito atenciosos. Recomendo!"</p><div class="review-author"><div class="review-avatar">C</div><div><div class="review-name">Carlos E.</div><div class="review-source">Google Maps</div></div></div></div>
+          <div class="review-card"><div class="stars-5"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p>"Ambiente acolhedor e muito limpo. Profissionais competentes e atendimento humanizado. Minha família toda faz exames aqui."</p><div class="review-author"><div class="review-avatar">F</div><div><div class="review-name">Fernanda R.</div><div class="review-source">Google Maps</div></div></div></div>
+          <div class="review-card"><div class="stars-5"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p>"Ótimo laboratório em Nova Granada. Estrutura moderna, resultado online e equipe muito prestativa. Nota 1000!"</p><div class="review-author"><div class="review-avatar">R</div><div><div class="review-name">Ricardo S.</div><div class="review-source">Google Maps</div></div></div></div>
+          <div class="review-card"><div class="stars-5"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p>"Sempre fui muito bem atendida. O laboratório é limpo, organizado e os resultados saem rápido. Super confio!"</p><div class="review-author"><div class="review-avatar">S</div><div><div class="review-name">Sandra O.</div><div class="review-source">Google Maps</div></div></div></div>
+          <div class="review-card"><div class="stars-5"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p>"Melhor laboratório da região! Equipe qualificada, preço acessível e atendimento com muito carinho. Recomendo de olhos fechados!"</p><div class="review-author"><div class="review-avatar">A</div><div><div class="review-name">Amanda L.</div><div class="review-source">Google Maps</div></div></div></div>
+          <div class="review-card"><div class="stars-5"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p>"Localização ótima na Av. Osterno Franco, ambiente acessível e confortável. Fiz consulta médica também, muito bom!"</p><div class="review-author"><div class="review-avatar">P</div><div><div class="review-name">Paulo H.</div><div class="review-source">Google Maps</div></div></div></div>
+          <div class="review-card"><div class="stars-5"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p>"Exame admissional feito com rapidez e profissionalismo. Emissão do ASO na hora. Empresa recomenda!"</p><div class="review-author"><div class="review-avatar">E</div><div><div class="review-name">Empresa MG</div><div class="review-source">Google Maps</div></div></div></div>
+          <div class="review-card"><div class="stars-5"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p>"Atendimento nota 10! Desde a recepção até a coleta, todos muito gentis e cuidadosos. Ambiente inclusivo e acolhedor."</p><div class="review-author"><div class="review-avatar">M</div><div><div class="review-name">Marina C.</div><div class="review-source">Google Maps</div></div></div></div>
+          <div class="review-card"><div class="stars-5"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p>"Fiz o hemograma e exames hormonais. Tudo perfeito! A equipe explica tudo com calma e paciência. Super indico!"</p><div class="review-author"><div class="review-avatar">J</div><div><div class="review-name">Juliana T.</div><div class="review-source">Google Maps</div></div></div></div>
+          <div class="review-card"><div class="stars-5"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p>"Laboratório confiável e com ótima estrutura. Preço acessível e resultados rápidos. O melhor custo-benefício de Nova Granada!"</p><div class="review-author"><div class="review-avatar">T</div><div><div class="review-name">Thiago N.</div><div class="review-source">Google Maps</div></div></div></div>
+          <div class="review-card"><div class="stars-5"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p>"Ótima clínica médica! Profissionais atenciosos e diagnóstico preciso. Faço acompanhamento aqui e só tenho elogios."</p><div class="review-author"><div class="review-avatar">B</div><div><div class="review-name">Beatriz A.</div><div class="review-source">Google Maps</div></div></div></div>
+          <div class="review-card"><div class="stars-5"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p>"Resultados de exames online facilitam muito a vida! Atendimento humanizado, equipe nota mil. Orgulho de Nova Granada!"</p><div class="review-author"><div class="review-avatar">G</div><div><div class="review-name">Gabriel D.</div><div class="review-source">Google Maps</div></div></div></div>
+          <div class="review-card"><div class="stars-5"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p>"Fui muito bem recebida, ambiente limpo e agradável. Coleta de sangue super tranquila, quase não senti nada. Recomendo!"</p><div class="review-author"><div class="review-avatar">V</div><div><div class="review-name">Vanessa P.</div><div class="review-source">Google Maps</div></div></div></div>
+          <div class="review-card"><div class="stars-5"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p>"Exames admissionais para minha empresa sempre ágeis e com toda documentação em ordem. Parceiro de confiança!"</p><div class="review-author"><div class="review-avatar">R</div><div><div class="review-name">RH Transportadora</div><div class="review-source">Google Maps</div></div></div></div>
+          <!-- Duplicado para loop infinito -->
+          <div class="review-card"><div class="stars-5"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p>"Excelente laboratório! Atendimento rápido, equipe muito educada e preço justo. Faço meus exames sempre aqui."</p><div class="review-author"><div class="review-avatar">L</div><div><div class="review-name">Luciana M.</div><div class="review-source">Google Maps</div></div></div></div>
+          <div class="review-card"><div class="stars-5"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p>"Fiz o exame toxicológico para renovar a CNH. Resultado rápido, funcionários muito atenciosos. Recomendo!"</p><div class="review-author"><div class="review-avatar">C</div><div><div class="review-name">Carlos E.</div><div class="review-source">Google Maps</div></div></div></div>
+          <div class="review-card"><div class="stars-5"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p>"Ambiente acolhedor e muito limpo. Profissionais competentes e atendimento humanizado. Minha família toda faz exames aqui."</p><div class="review-author"><div class="review-avatar">F</div><div><div class="review-name">Fernanda R.</div><div class="review-source">Google Maps</div></div></div></div>
+          <div class="review-card"><div class="stars-5"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p>"Ótimo laboratório em Nova Granada. Estrutura moderna, resultado online e equipe muito prestativa. Nota 1000!"</p><div class="review-author"><div class="review-avatar">R</div><div><div class="review-name">Ricardo S.</div><div class="review-source">Google Maps</div></div></div></div>
+          <div class="review-card"><div class="stars-5"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p>"Sempre fui muito bem atendida. O laboratório é limpo, organizado e os resultados saem rápido. Super confio!"</p><div class="review-author"><div class="review-avatar">S</div><div><div class="review-name">Sandra O.</div><div class="review-source">Google Maps</div></div></div></div>
+          <div class="review-card"><div class="stars-5"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p>"Melhor laboratório da região! Equipe qualificada, preço acessível e atendimento com muito carinho. Recomendo de olhos fechados!"</p><div class="review-author"><div class="review-avatar">A</div><div><div class="review-name">Amanda L.</div><div class="review-source">Google Maps</div></div></div></div>
+          <div class="review-card"><div class="stars-5"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p>"Localização ótima na Av. Osterno Franco, ambiente acessível e confortável. Fiz consulta médica também, muito bom!"</p><div class="review-author"><div class="review-avatar">P</div><div><div class="review-name">Paulo H.</div><div class="review-source">Google Maps</div></div></div></div>
+          <div class="review-card"><div class="stars-5"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p>"Exame admissional feito com rapidez e profissionalismo. Emissão do ASO na hora. Empresa recomenda!"</p><div class="review-author"><div class="review-avatar">E</div><div><div class="review-name">Empresa MG</div><div class="review-source">Google Maps</div></div></div></div>
+          <div class="review-card"><div class="stars-5"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p>"Atendimento nota 10! Desde a recepção até a coleta, todos muito gentis e cuidadosos. Ambiente inclusivo e acolhedor."</p><div class="review-author"><div class="review-avatar">M</div><div><div class="review-name">Marina C.</div><div class="review-source">Google Maps</div></div></div></div>
+          <div class="review-card"><div class="stars-5"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p>"Fiz o hemograma e exames hormonais. Tudo perfeito! A equipe explica tudo com calma e paciência. Super indico!"</p><div class="review-author"><div class="review-avatar">J</div><div><div class="review-name">Juliana T.</div><div class="review-source">Google Maps</div></div></div></div>
+          <div class="review-card"><div class="stars-5"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p>"Laboratório confiável e com ótima estrutura. Preço acessível e resultados rápidos. O melhor custo-benefício de Nova Granada!"</p><div class="review-author"><div class="review-avatar">T</div><div><div class="review-name">Thiago N.</div><div class="review-source">Google Maps</div></div></div></div>
+          <div class="review-card"><div class="stars-5"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p>"Ótima clínica médica! Profissionais atenciosos e diagnóstico preciso. Faço acompanhamento aqui e só tenho elogios."</p><div class="review-author"><div class="review-avatar">B</div><div><div class="review-name">Beatriz A.</div><div class="review-source">Google Maps</div></div></div></div>
+          <div class="review-card"><div class="stars-5"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p>"Resultados de exames online facilitam muito a vida! Atendimento humanizado, equipe nota mil. Orgulho de Nova Granada!"</p><div class="review-author"><div class="review-avatar">G</div><div><div class="review-name">Gabriel D.</div><div class="review-source">Google Maps</div></div></div></div>
+          <div class="review-card"><div class="stars-5"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p>"Fui muito bem recebida, ambiente limpo e agradável. Coleta de sangue super tranquila, quase não senti nada. Recomendo!"</p><div class="review-author"><div class="review-avatar">V</div><div><div class="review-name">Vanessa P.</div><div class="review-source">Google Maps</div></div></div></div>
+          <div class="review-card"><div class="stars-5"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p>"Exames admissionais para minha empresa sempre ágeis e com toda documentação em ordem. Parceiro de confiança!"</p><div class="review-author"><div class="review-avatar">R</div><div><div class="review-name">RH Transportadora</div><div class="review-source">Google Maps</div></div></div></div>
         </div>
       </div>
 
