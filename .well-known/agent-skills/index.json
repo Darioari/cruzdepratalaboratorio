@@ -1,0 +1,19 @@
+{
+  "$schema": "https://schemas.agentskills.io/discovery/0.2.0/schema.json",
+  "skills": [
+    {
+      "name": "auth-md",
+      "type": "skill-md",
+      "description": "Agent registration and usage policy for Cruz de Prata Laboratório",
+      "url": "https://cruzdepratalaboratorio.com.br/auth.md",
+      "digest": "sha256:bd5a2a42408e21e87c113835a01d1901a1e439861ef2f3121a81d04096736461"
+    },
+    {
+      "name": "llms-txt",
+      "type": "skill-md",
+      "description": "Informações consolidadas sobre o laboratório e exames clínicos para consumo por LLMs",
+      "url": "https://cruzdepratalaboratorio.com.br/llms.txt",
+      "digest": "sha256:8db30e39af1f6eacf58e95e0bc625fb594e2bde638750a193b4c876fccd4357e"
+    }
+  ]
+}

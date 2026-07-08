@@ -1,0 +1,28 @@
+{
+  "linkset": [
+    {
+      "anchor": "https://cruzdepratalaboratorio.com.br/",
+      "service-doc": [
+        {
+          "href": "https://cruzdepratalaboratorio.com.br/llms.txt",
+          "type": "text/plain",
+          "title": "Documentação do Site para LLMs"
+        }
+      ],
+      "describedby": [
+        {
+          "href": "https://cruzdepratalaboratorio.com.br/auth.md",
+          "type": "text/markdown",
+          "title": "Instruções de Autenticação e Registro de Agentes"
+        }
+      ],
+      "service-desc": [
+        {
+          "href": "https://cruzdepratalaboratorio.com.br/.well-known/mcp/server-card.json",
+          "type": "application/json",
+          "title": "Card do Servidor MCP (Model Context Protocol)"
+        }
+      ]
+    }
+  ]
+}

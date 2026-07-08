@@ -1,0 +1,45 @@
+{
+  "serverInfo": {
+    "name": "Cruz de Prata WebMCP Server",
+    "version": "1.0.0"
+  },
+  "endpoint": "https://cruzdepratalaboratorio.com.br/",
+  "capabilities": {
+    "tools": {
+      "list": [
+        {
+          "name": "get_lab_info",
+          "description": "Obtém informações de contato, endereço, horários de funcionamento e localização do laboratório Cruz de Prata.",
+          "inputSchema": {
+            "type": "object",
+            "properties": {}
+          }
+        },
+        {
+          "name": "list_services",
+          "description": "Lista os tipos de exames laboratoriais, exames toxicológicos e especialidades médicas atendidas.",
+          "inputSchema": {
+            "type": "object",
+            "properties": {}
+          }
+        },
+        {
+          "name": "search_exams",
+          "description": "Busca informações e preparação para exames de sangue/laboratoriais específicos.",
+          "inputSchema": {
+            "type": "object",
+            "properties": {
+              "query": {
+                "type": "string",
+                "description": "Termo de busca (ex: 'hemograma', 'colesterol', 'jejum')"
+              }
+            },
+            "required": [
+              "query"
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

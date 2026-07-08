@@ -15,6 +15,24 @@
     gtag('config', 'AW-18182319017');
   </script>
 
+  <!-- Meta Pixel Code -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '859398056862886');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=859398056862886&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
+
   <!-- Google Ads Conversion Tracking -->
   <script>
   function gtag_report_conversion(url) {
@@ -44,6 +62,13 @@
   <link rel="icon" type="image/webp" href="logo%20laboratorio%20Cruz%20Alta.webp" />
   <link rel="shortcut icon" type="image/webp" href="logo%20laboratorio%20Cruz%20Alta.webp" />
   <link rel="apple-touch-icon" href="logo%20laboratorio%20Cruz%20Alta.webp" />
+
+  <!-- ═══════════════════ AI AGENTS DISCOVERY ═══════════════════ -->
+  <link rel="api-catalog" type="application/linkset+json" href="/.well-known/api-catalog" />
+  <link rel="service-doc" type="text/plain" href="/llms.txt" />
+  <link rel="describedby" type="text/markdown" href="/auth.md" />
+  <link rel="service-desc" type="application/json" href="/.well-known/mcp/server-card.json" />
+  <link rel="agent-skills" type="application/json" href="/.well-known/agent-skills/index.json" />
 
   <!-- ═══════════════════ OPEN GRAPH / FACEBOOK ═══════════════════ -->
   <meta property="og:type" content="website" />
@@ -1758,6 +1783,111 @@
   }, { threshold: 0.4 });
 
   sections.forEach(s => navObserver.observe(s));
+</script>
+
+<script>
+  /* ── WEBMCP INTEGRATION FOR AI AGENTS ── */
+  document.addEventListener('DOMContentLoaded', () => {
+    if (typeof window.navigator.modelContext !== 'undefined') {
+      const controller = new AbortController();
+      const signal = controller.signal;
+
+      const tools = [
+        {
+          name: 'get_lab_info',
+          description: 'Obtém informações de contato, endereço, horários de funcionamento e localização do laboratório Cruz de Prata.',
+          inputSchema: {
+            type: 'object',
+            properties: {}
+          },
+          execute: async () => {
+            return {
+              content: [
+                {
+                  type: 'text',
+                  text: `Cruz de Prata Laboratório e Clínica Médica\nEndereço: Av. Osterno Nogueira Franco, 890 - Sandra Regina, Nova Granada - SP, 15440-000\nTelefone Fixo: (17) 3262-0707\nWhatsApp: (17) 3262-0705\nCoordenadas: -20.532334, -49.3214085\nHorário de Funcionamento:\n- Segunda a Sexta: 06:30 - 17:00\n- Sábado: 07:00 - 11:00\n- Domingo: Consultar disponibilidade\nAmbiente: Inclusivo, acessível para cadeirantes.`
+                }
+              ]
+            };
+          }
+        },
+        {
+          name: 'list_services',
+          description: 'Lista os tipos de exames laboratoriais, exames toxicológicos e especialidades médicas atendidas.',
+          inputSchema: {
+            type: 'object',
+            properties: {}
+          },
+          execute: async () => {
+            return {
+              content: [
+                {
+                  type: 'text',
+                  text: `Serviços oferecidos pela Cruz de Prata:\n1. Exames Laboratoriais: Hemograma, Glicemia, Colesterol total/frações, Triglicerídeos, Ureia, Creatinina, TGO, TGP, Ácido Úrico, etc.\n2. Exames Hormonais: TSH, T4 Livre, Cortisol, Insulina, Testosterona, Estradiol, Progesterona.\n3. Imunologia e Sorologias: Sorologias diversas, autoimunidade, testes alérgicos.\n4. Marcadores Tumorais: PSA, CA 125, CA 19-9, CEA.\n5. Exame Toxicológico: Toxicológico de larga janela de detecção para motoristas profissionais (CLT/Catarina/Detran).\n6. Consultas Médicas: Diversas especialidades com atendimento humanizado.\n7. Urinálise e Parasitologia: Exame de urina tipo I, urocultura, parasitológico de fezes.\n8. Sexagem Fetal e Testes de DNA (Paternidade).`
+                }
+              ]
+            };
+          }
+        },
+        {
+          name: 'search_exams',
+          description: 'Busca informações e preparação necessária (ex: jejum) para exames de sangue ou laboratoriais específicos.',
+          inputSchema: {
+            type: 'object',
+            properties: {
+              query: {
+                type: 'string',
+                description: 'Nome do exame a ser consultado (ex: hemograma, glicemia, colesterol, toxicológico).'
+              }
+            },
+            required: ['query']
+          },
+          execute: async (args) => {
+            const query = (args.query || '').toLowerCase();
+            const examDatabase = {
+              'hemograma': 'Hemograma Completo: Não exige jejum obrigatório na maioria dos casos, mas recomenda-se repouso de 3 horas após refeição leve.',
+              'glicemia': 'Glicemia de Jejum: Exige jejum absoluto de 8 a 12 horas. Evite bebidas alcoólicas nas 72 horas anteriores.',
+              'colesterol': 'Colesterol Total e Frações / Perfil Lipídico: Jejum de 12 horas recomendado se houver solicitação médica de perfil completo com triglicerídeos.',
+              'triglicerideos': 'Triglicerídeos: Exige jejum rigoroso de 12 horas. Evite álcool e exercícios físicos intensos nas 24h anteriores.',
+              'toxicologico': 'Exame Toxicológico: Não exige jejum e não necessita de nenhuma preparação especial. Coleta de queratina (cabelo ou pelos). Levar documento oficial com foto.',
+              'urina': 'Urina Tipo I / Urocultura: Colher preferencialmente a primeira urina da manhã. Higienizar a região íntima e descartar o primeiro jato. Entregar no laboratório em até 2 horas.',
+              'sexagem': 'Sexagem Fetal: Realizada a partir da 8ª semana completa de gestação. Não necessita de jejum.'
+            };
+
+            let matched = [];
+            for (let key in examDatabase) {
+              if (query.includes(key) || key.includes(query)) {
+                matched.push(examDatabase[key]);
+              }
+            }
+
+            if (matched.length > 0) {
+              return { content: [{ type: 'text', text: matched.join('\n\n') }] };
+            } else {
+              return {
+                content: [{
+                  type: 'text',
+                  text: `Nenhuma instrução específica encontrada para "${args.query}". Por favor, entre em contato pelo WhatsApp (17) 3262-0705 para orientações exatas sobre a preparação deste exame.`
+                }]
+              };
+            }
+          }
+        }
+      ];
+
+      // Provide Context (WebMCP spec)
+      if (typeof window.navigator.modelContext.provideContext === 'function') {
+        window.navigator.modelContext.provideContext({ tools }, { signal });
+      }
+
+      // Register Tool (Standard fallback)
+      if (typeof window.navigator.modelContext.registerTool === 'function') {
+        tools.forEach(tool => {
+          window.navigator.modelContext.registerTool(tool.name, tool.description, tool.inputSchema, tool.execute, { signal });
+        });
+      }
+    }
+  });
 </script>
 
 </body>
