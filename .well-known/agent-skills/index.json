@@ -6,7 +6,7 @@
       "type": "skill-md",
       "description": "Agent registration and usage policy for Cruz de Prata Laboratório",
       "url": "https://cruzdepratalaboratorio.com.br/auth.md",
-      "digest": "sha256:bd5a2a42408e21e87c113835a01d1901a1e439861ef2f3121a81d04096736461"
+      "digest": "sha256:86ea2261643259474e7411864316222906a54a6a18716e362222c7f1e7603850"
     },
     {
       "name": "llms-txt",
