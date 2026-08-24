@@ -565,6 +565,12 @@
     .service-card:hover .service-icon { background: var(--blue-700); color: white; }
     .service-card h3 { margin-bottom: .5rem; font-size: 1.1rem; }
     .service-card p  { font-size: .9rem; line-height: 1.6; }
+    .service-link {
+      display: inline-block; margin-top: 1.1rem; font-weight: 600; font-size: .9rem;
+      color: var(--blue-700); text-decoration: none; transition: var(--transition);
+    }
+    .service-link:hover { color: var(--blue-900, #0b2e6b); }
+    .service-link i { margin-right: .35rem; }
 
     /* ── EXAMS HIGHLIGHT FOLD ── */
     .highlights-section {
@@ -1133,12 +1139,14 @@
         <div class="service-icon" aria-hidden="true"><i class="fas fa-user-md"></i></div>
         <h3>Consulta Médica — Clínico Geral</h3>
         <p>Atendimento médico especializado com foco no seu bem-estar. Profissionais qualificados em clínico geral e diversas especialidades com diagnóstico preciso e tratamento humanizado.</p>
+        <a href="../clinico-geral/" class="service-link"><i class="fas fa-arrow-right" aria-hidden="true"></i> Saiba mais</a>
       </article>
 
       <article class="service-card reveal" role="listitem">
         <div class="service-icon" aria-hidden="true"><i class="fas fa-car"></i></div>
         <h3>Exame Toxicológico</h3>
         <p>Exame toxicológico para motoristas profissionais (CLT) e demais finalidades. Resultado rápido e seguro para regularização e empregabilidade.</p>
+        <a href="../exame-toxicologico/" class="service-link"><i class="fas fa-arrow-right" aria-hidden="true"></i> Saiba mais</a>
       </article>
 
       <article class="service-card reveal" role="listitem">
@@ -1163,12 +1171,14 @@
         <div class="service-icon" aria-hidden="true"><i class="fas fa-briefcase-medical"></i></div>
         <h3>Medicina do Trabalho</h3>
         <p>Exames ocupacionais completos para sua empresa, incluindo admissionais, periódicos e demissionais. Emitimos ASO com rapidez e total conformidade com as normas regulamentadoras (NR-7).</p>
+        <a href="../medicina-do-trabalho/" class="service-link"><i class="fas fa-arrow-right" aria-hidden="true"></i> Saiba mais</a>
       </article>
 
       <article class="service-card reveal" id="admissional" role="listitem">
         <div class="service-icon" aria-hidden="true"><i class="fas fa-file-contract"></i></div>
         <h3>Exames Admissionais</h3>
         <p>Exames admissionais para contratação de funcionários com emissão de ASO (Atestado de Saúde Ocupacional) ágil e seguro, garantindo a regularidade trabalhista da sua empresa.</p>
+        <a href="../admissional/" class="service-link"><i class="fas fa-arrow-right" aria-hidden="true"></i> Saiba mais</a>
       </article>
 
     </div>

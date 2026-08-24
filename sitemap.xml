@@ -58,4 +58,52 @@
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://cruzdepratalaboratorio.com.br/blog-cruz-de-prata/dna-na-gravidez-granada-sp" />
   </url>
 
+  <url>
+    <loc>https://cruzdepratalaboratorio.com.br/clinico-geral/</loc>
+    <lastmod>2026-08-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://cruzdepratalaboratorio.com.br/clinico-geral/" />
+  </url>
+
+  <url>
+    <loc>https://cruzdepratalaboratorio.com.br/medicina-do-trabalho/</loc>
+    <lastmod>2026-08-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://cruzdepratalaboratorio.com.br/medicina-do-trabalho/" />
+  </url>
+
+  <url>
+    <loc>https://cruzdepratalaboratorio.com.br/admissional/</loc>
+    <lastmod>2026-08-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://cruzdepratalaboratorio.com.br/admissional/" />
+  </url>
+
+  <url>
+    <loc>https://cruzdepratalaboratorio.com.br/equipe/</loc>
+    <lastmod>2026-08-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://cruzdepratalaboratorio.com.br/equipe/" />
+  </url>
+
+  <url>
+    <loc>https://cruzdepratalaboratorio.com.br/blog-cruz-de-prata/exame-admissional-nova-granada</loc>
+    <lastmod>2026-08-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://cruzdepratalaboratorio.com.br/blog-cruz-de-prata/exame-admissional-nova-granada" />
+  </url>
+
+  <url>
+    <loc>https://cruzdepratalaboratorio.com.br/blog-cruz-de-prata/clinico-geral-consulta-nova-granada</loc>
+    <lastmod>2026-08-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://cruzdepratalaboratorio.com.br/blog-cruz-de-prata/clinico-geral-consulta-nova-granada" />
+  </url>
+
 </urlset>
