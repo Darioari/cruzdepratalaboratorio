@@ -93,30 +93,33 @@
   <meta name="geo.position" content="-20.532334;-49.3214085" />
   <meta name="ICBM" content="-20.532334, -49.3214085" />
 
-  <!-- ═══════════════════ SCHEMA.ORG JSON-LD ═══════════════════ -->
+  <!-- Canonical medical business entity -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": ["MedicalLab", "LocalBusiness"],
-    "@id": "https://cruzdepratalaboratorio.com.br/#organization",
-    "name": "Cruz de Prata Laboratório e Clínica Médica",
+    "@type": ["MedicalClinic", "DiagnosticLab"],
+    "@id": "https://cruzdepratalaboratorio.com.br/#business",
+    "name": "Cruz de Prata Laborat\u00f3rio e Cl\u00ednica M\u00e9dica",
     "alternateName": "Cruz de Prata Lab",
     "url": "https://cruzdepratalaboratorio.com.br/",
+    "mainEntityOfPage": "https://cruzdepratalaboratorio.com.br/",
     "logo": "https://cruzdepratalaboratorio.com.br/logo%20laboratorio%20Cruz%20Alta.webp",
     "image": "https://cruzdepratalaboratorio.com.br/logo%20laboratorio%20Cruz%20Alta.webp",
-    "description": "Laboratório clínico e clínica médica com mais de 800 tipos de exames laboratoriais. Atendimento humanizado, resultados precisos e preço acessível em Nova Granada - SP.",
-    "telephone": "+55-17-3262-0707",
-    "priceRange": "$$",
-    "currenciesAccepted": "BRL",
-    "paymentAccepted": "Dinheiro, Cartão de Crédito, Cartão de Débito, Pix",
+    "description": "Laborat\u00f3rio cl\u00ednico e cl\u00ednica m\u00e9dica com mais de 800 tipos de exames laboratoriais em Nova Granada - SP.",
+    "telephone": "+55 17 3262-0707",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+55 17 3262-0705",
+      "contactType": "WhatsApp",
+      "url": "https://wa.me/551732620705"
+    },
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "Av. Osterno Nogueira Franco, 890",
       "addressLocality": "Nova Granada",
       "addressRegion": "SP",
-      "postalCode": "15440-000",
-      "addressCountry": "BR",
-      "addressArea": "Sandra Regina"
+      "postalCode": "15440-348",
+      "addressCountry": "BR"
     },
     "geo": {
       "@type": "GeoCoordinates",
@@ -126,7 +129,7 @@
     "openingHoursSpecification": [
       {
         "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
         "opens": "06:30",
         "closes": "17:00"
       },
@@ -137,77 +140,17 @@
         "closes": "11:00"
       }
     ],
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "5.0",
-      "reviewCount": "61",
-      "bestRating": "5",
-      "worstRating": "1"
-    },
-    "hasMap": "https://maps.app.goo.gl/nqeuEpX3BNymrHK7A",
-    "medicalSpecialty": "Laboratório Clínico",
-    "availableService": [
-      {"@type": "MedicalTest", "name": "Hemograma Completo"},
-      {"@type": "MedicalTest", "name": "Exames Hormonais"},
-      {"@type": "MedicalTest", "name": "Imunologia e Sorologias"},
-      {"@type": "MedicalTest", "name": "Marcadores Tumorais"},
-      {"@type": "MedicalTest", "name": "Exame Toxicológico"},
-      {"@type": "MedicalTest", "name": "Bioquímica Clínica"},
-      {"@type": "MedicalTest", "name": "Urinálise"},
-      {"@type": "MedicalTest", "name": "Sexagem Fetal e DNA"},
-      {"@type": "MedicalTest", "name": "Exames Admissionais"},
-      {"@type": "MedicalTherapy", "name": "Consulta Médica"},
-      {"@type": "MedicalTherapy", "name": "Medicina do Trabalho"}
+    "availableTest": [
+      {"@type": "MedicalTest", "name": "Exames laboratoriais"},
+      {"@type": "MedicalTest", "name": "Exame toxicol\u00f3gico"},
+      {"@type": "MedicalTest", "name": "Sexagem fetal e teste de DNA"}
     ],
+    "hasMap": "https://maps.app.goo.gl/nqeuEpX3BNymrHK7A",
     "sameAs": [
       "https://maps.app.goo.gl/nqeuEpX3BNymrHK7A",
       "https://www.facebook.com/labcruzdeprata/?locale=pt_BR",
       "https://www.instagram.com/cruzdepratalaboratorio/"
-    ],
-    "isAccessibleForFree": false,
-    "wheelchair accessibility": true
-  }
-  </script>
-
-  <!-- ═══════════════════ LOCAL BUSINESS SCHEMA (GOOGLE) ═══════════════════ -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "Cruz de Prata Laboratório e Clinica Médica",
-    "image": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=N6Uan2S7vb_uNT1jWhkwgA&cb_client=search.gws-prod.gps&w=211&h=120&yaw=330.30203&pitch=0&thumbfov=100",
-    "@id": "https://cruzdepratalaboratorio.com.br/",
-    "url": "https://cruzdepratalaboratorio.com.br/",
-    "telephone": "+55 17 3262-0707",
-    "hasMap": "https://www.google.com/maps/place/?q=place_id:ChIJSwrNjtD9vJQRL68R_QHuJ-0",
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "5.0",
-      "ratingCount": "61",
-      "bestRating": "5"
-    },
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Av. Osterno Nogueira Franco, 890 - Sandra Regina, Nova Granada - SP, 15440-348, Brasil"
-    },
-    "makesOffer": [
-      {
-        "@type": "Offer",
-        "name": "Laboratório"
-      },
-      {
-        "@type": "Offer",
-        "name": "Médico de medicina ocupacional"
-      }
-    ],
-    "sameAs": [
-      "https://cruzdepratalaboratorio.com.br/"
-    ],
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": -20.532334,
-      "longitude": -49.3214085
-    }
+    ]
   }
   </script>
 
@@ -278,7 +221,7 @@
         "name": "Onde fica o Cruz de Prata Laboratório?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Estamos localizados na Av. Osterno Nogueira Franco, 890 - Sandra Regina, Nova Granada - SP, 15440-000. Possuímos acessibilidade para cadeirantes."
+          "text": "Estamos localizados na Av. Osterno Nogueira Franco, 890 - Sandra Regina, Nova Granada - SP, 15440-348. Possuímos acessibilidade para cadeirantes."
         }
       }
     ]
@@ -1262,7 +1205,7 @@
 <!-- ══════════════════════════════════════════
      DEPOIMENTOS / AVALIAÇÕES GOOGLE
 ══════════════════════════════════════════ -->
-<section class="section" id="depoimentos" aria-labelledby="reviews-title" itemscope itemtype="https://schema.org/Organization">
+<section class="section" id="depoimentos" aria-labelledby="reviews-title">
   <div class="container">
     <div class="section-header section-header--center reveal">
       <span class="tag"><i class="fas fa-star" aria-hidden="true"></i> Depoimentos</span>
@@ -1277,12 +1220,9 @@
         <div style="font-size: 3.5rem; line-height: 1; margin-bottom: .5rem; color: #f59e0b;">★★★★★</div>
         <div style="font-size: 2.2rem; font-weight: 800; color: var(--gray-800);">5.0</div>
         <div style="font-size: 1rem; color: var(--gray-600); margin: .25rem 0 1.5rem;">
-          <strong itemprop="name">Cruz de Prata Laboratório e Clínica Médica</strong>
+          <strong>Cruz de Prata Laboratório e Clínica Médica</strong>
           <br>
-          <span itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
-            <span itemprop="ratingValue">5.0</span> de <span itemprop="bestRating">5</span> estrelas ·
-            <span itemprop="reviewCount">61</span> avaliações no Google Maps
-          </span>
+          59 avalia&ccedil;&otilde;es no Google Maps
         </div>
 
         <div style="display: flex; flex-wrap: wrap; gap: .75rem; justify-content: center;">
@@ -1446,7 +1386,7 @@
           <i class="fas fa-chevron-down" aria-hidden="true"></i>
         </button>
         <div class="faq-answer" role="region">
-          <p>Funcionamos de <strong>segunda a sexta-feira das 06:30 às 17:00</strong> e aos <strong>sábados das 07:00 às 11:00</strong>. Domingos e feriados, verificar disponibilidade pelo telefone.</p>
+          <p>Funcionamos de <strong>segunda a sexta-feira das 06:30 às 17:00</strong> e aos <strong>sábados das 07:00 às 11:00</strong>. Domingos: fechado. Em feriados, consulte a disponibilidade pelo telefone.</p>
         </div>
       </div>
 
@@ -1537,7 +1477,7 @@
             <span class="info-card-value">
               Av. Osterno Nogueira Franco, 890<br>
               Sandra Regina — Nova Granada - SP<br>
-              CEP: 15440-000
+              CEP: 15440-348
             </span>
           </div>
         </div>
@@ -1569,7 +1509,7 @@
             <div class="hours-grid" role="list">
               <span class="hours-day" role="listitem">Seg – Sex</span><span class="hours-time">06:30 – 17:00</span>
               <span class="hours-day" role="listitem">Sábado</span><span class="hours-time">07:00 – 11:00</span>
-              <span class="hours-day" role="listitem">Domingo</span><span class="hours-time">Consulte-nos</span>
+              <span class="hours-day" role="listitem">Domingo</span><span class="hours-time">Fechado</span>
             </div>
           </div>
         </div>
@@ -1816,7 +1756,7 @@
               content: [
                 {
                   type: 'text',
-                  text: `Cruz de Prata Laboratório e Clínica Médica\nEndereço: Av. Osterno Nogueira Franco, 890 - Sandra Regina, Nova Granada - SP, 15440-000\nTelefone Fixo: (17) 3262-0707\nWhatsApp: (17) 3262-0705\nCoordenadas: -20.532334, -49.3214085\nHorário de Funcionamento:\n- Segunda a Sexta: 06:30 - 17:00\n- Sábado: 07:00 - 11:00\n- Domingo: Consultar disponibilidade\nAmbiente: Inclusivo, acessível para cadeirantes.`
+                  text: `Cruz de Prata Laboratório e Clínica Médica\nEndereço: Av. Osterno Nogueira Franco, 890 - Sandra Regina, Nova Granada - SP, 15440-348\nTelefone Fixo: (17) 3262-0707\nWhatsApp: (17) 3262-0705\nCoordenadas: -20.532334, -49.3214085\nHorário de Funcionamento:\n- Segunda a Sexta: 06:30 - 17:00\n- Sábado: 07:00 - 11:00\n- Domingo: Fechado\n- Feriados: consultar disponibilidade\nAmbiente: Inclusivo, acessível para cadeirantes.`
                 }
               ]
             };
@@ -1901,5 +1841,6 @@
   });
 </script>
 
+<script src="/contact-tracking.js" defer></script>
 </body>
 </html>
