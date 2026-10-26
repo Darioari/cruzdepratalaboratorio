@@ -12,7 +12,7 @@
 
   <url>
     <loc>https://cruzdepratalaboratorio.com.br/blog-cruz-de-prata/</loc>
-    <lastmod>2026-06-08</lastmod>
+    <lastmod>2026-10-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://cruzdepratalaboratorio.com.br/blog-cruz-de-prata/" />
@@ -106,4 +106,11 @@
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://cruzdepratalaboratorio.com.br/blog-cruz-de-prata/clinico-geral-consulta-nova-granada" />
   </url>
 
+  <url>
+    <loc>https://cruzdepratalaboratorio.com.br/blog-cruz-de-prata/quais-exames-de-sangue-precisam-de-jejum</loc>
+    <lastmod>2026-10-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://cruzdepratalaboratorio.com.br/blog-cruz-de-prata/quais-exames-de-sangue-precisam-de-jejum" />
+  </url>
 </urlset>
