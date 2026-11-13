@@ -1,0 +1,27 @@
+.clinic-care-grid .sp-card {
+  display: flex;
+  flex-direction: column;
+  border-color: transparent;
+}
+.clinic-care-grid .sp-card:nth-child(odd) {
+  background: linear-gradient(145deg, #09243a, #0d5573);
+  color: #fff;
+}
+.clinic-care-grid .sp-card:nth-child(odd) small { color: #a9e7c4; }
+.clinic-care-grid .sp-card:nth-child(odd) h3 { color: #fff; }
+.clinic-care-grid .sp-card:nth-child(odd) p { color: rgba(255,255,255,.78); }
+.clinic-care-grid .sp-card:nth-child(odd) .sp-card-icon { background: rgba(255,255,255,.13); color: #b9f0d1; }
+.clinic-care-grid .sp-card:nth-child(even) {
+  border-color: #d8ebed;
+  background: linear-gradient(145deg, #f1fbf8, #e2f3f6);
+}
+.clinic-care-grid .sp-card:nth-child(even) .sp-card-icon { background: #d7f0e3; color: #0789af; }
+.clinic-care-grid .sp-card:hover { border-color: rgba(13,141,183,.45); }
+.sp-check-list { display: grid; gap: .75rem; margin: 1.2rem 0; padding: 0; list-style: none; }
+.sp-check-list li { display: flex; align-items: flex-start; gap: .6rem; color: #53666e; font-size: .9rem; line-height: 1.55; }
+.sp-check-list i { margin-top: .28rem; color: #0d8db7; }
+.clinic-geral-page .sp-contact-grid { margin-top: 2rem; }
+
+@media (max-width: 760px) {
+  .clinic-care-grid .sp-card { min-height: 0; }
+}

@@ -1,116 +1,131 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xhtml="http://www.w3.org/1999/xhtml">
-
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://cruzdepratalaboratorio.com.br/</loc>
-    <lastmod>2026-06-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://cruzdepratalaboratorio.com.br/" />
+    <lastmod>2026-11-13</lastmod>
+    <image:image>
+      <image:loc>https://cruzdepratalaboratorio.com.br/imsgenspost/mulher-laboratorio-cruz-de-prata.webp</image:loc>
+      <image:title>LABORATÓRIO E CLÍNICA MÉDICA em Nova Granada-SP</image:title>
+    </image:image>
   </url>
-
   <url>
     <loc>https://cruzdepratalaboratorio.com.br/blog-cruz-de-prata/</loc>
-    <lastmod>2026-10-26</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://cruzdepratalaboratorio.com.br/blog-cruz-de-prata/" />
+    <lastmod>2026-11-13</lastmod>
+    <image:image>
+      <image:loc>https://cruzdepratalaboratorio.com.br/imsgenspost/bg-blog.webp</image:loc>
+      <image:title>Blog do Laboratório Cruz de Prata</image:title>
+    </image:image>
   </url>
-
   <url>
     <loc>https://cruzdepratalaboratorio.com.br/blog-cruz-de-prata/laboratorio-exame-toxicologico-nova-granada</loc>
-    <lastmod>2026-08-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://cruzdepratalaboratorio.com.br/blog-cruz-de-prata/laboratorio-exame-toxicologico-nova-granada"/>
+    <lastmod>2026-11-13</lastmod>
+    <image:image>
+      <image:loc>https://cruzdepratalaboratorio.com.br/imsgenspost/laboratorio-exame-toxicologico-nova-granada-sp.webp</image:loc>
+      <image:title>Laboratório para Fazer Exame Toxicológico em Nova Granada-SP: Tudo o que Você Precisa Saber</image:title>
+    </image:image>
   </url>
-
   <url>
     <loc>https://cruzdepratalaboratorio.com.br/blog-cruz-de-prata/laboratorio-e-clinica-medica-em-granada-sp</loc>
-    <lastmod>2026-06-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://cruzdepratalaboratorio.com.br/blog-cruz-de-prata/laboratorio-e-clinica-medica-em-granada-sp" />
+    <lastmod>2026-11-13</lastmod>
+    <image:image>
+      <image:loc>https://cruzdepratalaboratorio.com.br/imsgenspost/cruz-de-prata-laboratorio-granada.jpg</image:loc>
+      <image:title>Laboratório e Clínica Médica em Nova Granada-SP: Conheça os Principais Serviços da Cruz de Prata</image:title>
+    </image:image>
   </url>
-
-  <url>
-    <loc>https://cruzdepratalaboratorio.com.br/llms.txt</loc>
-    <lastmod>2026-06-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://cruzdepratalaboratorio.com.br/llms.txt" />
-  </url>
-
-  <url>
-    <loc>https://cruzdepratalaboratorio.com.br/exame-toxicologico/</loc>
-    <lastmod>2026-06-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://cruzdepratalaboratorio.com.br/exame-toxicologico/" />
-  </url>
-
   <url>
     <loc>https://cruzdepratalaboratorio.com.br/blog-cruz-de-prata/dna-na-gravidez-granada-sp</loc>
-    <lastmod>2026-06-10</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://cruzdepratalaboratorio.com.br/blog-cruz-de-prata/dna-na-gravidez-granada-sp" />
+    <lastmod>2026-11-13</lastmod>
+    <image:image>
+      <image:loc>https://cruzdepratalaboratorio.com.br/imsgenspost/exame-gravidez-dna-sexagem.webp</image:loc>
+      <image:title>DNA na Gravidez em Nova Granada-SP: Como Funciona o Exame de Paternidade Durante a Gestação?</image:title>
+    </image:image>
   </url>
-
-  <url>
-    <loc>https://cruzdepratalaboratorio.com.br/clinico-geral/</loc>
-    <lastmod>2026-08-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://cruzdepratalaboratorio.com.br/clinico-geral/" />
-  </url>
-
-  <url>
-    <loc>https://cruzdepratalaboratorio.com.br/medicina-do-trabalho/</loc>
-    <lastmod>2026-08-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://cruzdepratalaboratorio.com.br/medicina-do-trabalho/" />
-  </url>
-
-  <url>
-    <loc>https://cruzdepratalaboratorio.com.br/admissional/</loc>
-    <lastmod>2026-08-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://cruzdepratalaboratorio.com.br/admissional/" />
-  </url>
-
-  <url>
-    <loc>https://cruzdepratalaboratorio.com.br/equipe/</loc>
-    <lastmod>2026-08-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://cruzdepratalaboratorio.com.br/equipe/" />
-  </url>
-
   <url>
     <loc>https://cruzdepratalaboratorio.com.br/blog-cruz-de-prata/exame-admissional-nova-granada</loc>
-    <lastmod>2026-08-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://cruzdepratalaboratorio.com.br/blog-cruz-de-prata/exame-admissional-nova-granada" />
+    <lastmod>2026-11-13</lastmod>
+    <image:image>
+      <image:loc>https://cruzdepratalaboratorio.com.br/imsgenspost/exame-admissional-capa.webp</image:loc>
+      <image:title>Exame Admissional em Nova Granada-SP: O que é, Quais Exames e Como Agendar</image:title>
+    </image:image>
   </url>
-
   <url>
     <loc>https://cruzdepratalaboratorio.com.br/blog-cruz-de-prata/clinico-geral-consulta-nova-granada</loc>
-    <lastmod>2026-08-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://cruzdepratalaboratorio.com.br/blog-cruz-de-prata/clinico-geral-consulta-nova-granada" />
+    <lastmod>2026-11-13</lastmod>
+    <image:image>
+      <image:loc>https://cruzdepratalaboratorio.com.br/imsgenspost/clinico-geral-capa.webp</image:loc>
+      <image:title>Consulta com Clínico Geral em Nova Granada-SP: Quando Procurar e Como Agendar</image:title>
+    </image:image>
   </url>
-
   <url>
     <loc>https://cruzdepratalaboratorio.com.br/blog-cruz-de-prata/quais-exames-de-sangue-precisam-de-jejum</loc>
-    <lastmod>2026-10-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://cruzdepratalaboratorio.com.br/blog-cruz-de-prata/quais-exames-de-sangue-precisam-de-jejum" />
+    <lastmod>2026-11-13</lastmod>
+    <image:image>
+      <image:loc>https://cruzdepratalaboratorio.com.br/imsgenspost/Quais%20exames%20de%20sangue%20precisam%20de%20jejum.webp</image:loc>
+      <image:title>Quais exames de sangue precisam de jejum?</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://cruzdepratalaboratorio.com.br/blog-cruz-de-prata/novembro-azul-exames-laboratoriais-saude-do-homem</loc>
+    <lastmod>2026-11-13</lastmod>
+    <image:image>
+      <image:loc>https://cruzdepratalaboratorio.com.br/imsgenspost/laboratorio-clinica-granada-sp.jpg</image:loc>
+      <image:title>Novembro Azul: quais exames ajudam a cuidar da saúde do homem?</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://cruzdepratalaboratorio.com.br/exame-toxicologico/</loc>
+    <lastmod>2026-11-13</lastmod>
+    <image:image>
+      <image:loc>https://cruzdepratalaboratorio.com.br/imsgenspost/exame-toxicologico.webp</image:loc>
+      <image:title>Exame toxicológico</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://cruzdepratalaboratorio.com.br/sexagem-exame-dna-gravidez/</loc>
+    <lastmod>2026-11-13</lastmod>
+    <image:image>
+      <image:loc>https://cruzdepratalaboratorio.com.br/imsgenspost/exame-gravidez-dna-sexagem.webp</image:loc>
+      <image:title>Sexagem fetal - DNA na gravidez</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://cruzdepratalaboratorio.com.br/clinico-geral/</loc>
+    <lastmod>2026-11-13</lastmod>
+    <image:image>
+      <image:loc>https://cruzdepratalaboratorio.com.br/imsgenspost/dra-mariana-eleodoro-mussi.webp</image:loc>
+      <image:title>Atendimento de clínico geral</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://cruzdepratalaboratorio.com.br/medicina-do-trabalho/</loc>
+    <lastmod>2026-11-13</lastmod>
+    <image:image>
+      <image:loc>https://cruzdepratalaboratorio.com.br/imsgenspost/exame-admissional-banner.webp</image:loc>
+      <image:title>Medicina do Trabalho</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://cruzdepratalaboratorio.com.br/admissional/</loc>
+    <lastmod>2026-11-13</lastmod>
+    <image:image>
+      <image:loc>https://cruzdepratalaboratorio.com.br/imsgenspost/exame-admissional-banner.webp</image:loc>
+      <image:title>Exame Admissional</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://cruzdepratalaboratorio.com.br/exames/</loc>
+    <lastmod>2026-11-13</lastmod>
+    <image:image>
+      <image:loc>https://cruzdepratalaboratorio.com.br/imsgenspost/laboratorio-clinica-granada-sp.jpg</image:loc>
+      <image:title>Exames laboratoriais em Nova Granada</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://cruzdepratalaboratorio.com.br/equipe/</loc>
+    <lastmod>2026-11-13</lastmod>
+    <image:image>
+      <image:loc>https://cruzdepratalaboratorio.com.br/imsgenspost/mulher-laboratorio-cruz-de-prata.webp</image:loc>
+      <image:title>Equipe e Experiência da Cruz de Prata</image:title>
+    </image:image>
   </url>
 </urlset>

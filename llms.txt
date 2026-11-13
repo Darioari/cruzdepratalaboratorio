@@ -1,98 +1,60 @@
 # Cruz de Prata Laboratório e Clínica Médica
 
-> Laboratório clínico e clínica médica localizado em Nova Granada - SP, Brasil. Oferece mais de 800 tipos de exames laboratoriais com tecnologia de ponta, equipe especializada e atendimento humanizado.
+> Laboratório e clínica médica em Nova Granada, São Paulo, Brasil. Este arquivo resume informações publicadas no site; confirme com a equipe dados que dependam de agenda, pedido médico ou disponibilidade no dia.
 
-## Informações Principais
+## Identificação e contato
 
 - **Nome:** Cruz de Prata Laboratório e Clínica Médica
-- **Tipo de negócio:** Laboratório Clínico e Clínica Médica
-- **Endereço:** Av. Osterno Nogueira Franco, 890 - Sandra Regina, Nova Granada - SP, 15440-000
+- **Endereço:** Avenida Osterno Nogueira Franco, 890, bairro Sandra Regina, Nova Granada - SP, CEP 15440-348
+- **Telefone:** (17) 3262-0707
 - **WhatsApp:** (17) 3262-0705
-- **Telefone Fixo:** (17) 3262-0707
 - **Coordenadas:** -20.532334, -49.3214085
-- **Avaliação Google:** 5.0 estrelas
-- **Acessibilidade:** Entrada acessível para cadeirantes
-- **Ambiente:** Inclusivo e acolhedor (LGBTQ+ friendly)
 
-## Horário de Funcionamento
+## Horário do laboratório
 
-- Segunda a Sexta: 06:30 – 17:00
-- Sábado: 07:00 – 11:00
-- Domingo: Consultar disponibilidade
+- Segunda a sexta-feira: 06:30–17:00
+- Sábado: 07:00–11:00
+- Domingo: fechado
+- A agenda de consultas médicas pode ter horário próprio; confirme antes de ir.
 
-## Serviços Oferecidos
+## Serviços publicados no site
 
-### Exames Laboratoriais
-Mais de 800 tipos de exames incluindo hemograma completo, glicemia em jejum, colesterol total e frações, triglicerídeos, ácido úrico, creatinina, ureia, TGO, TGP e muito mais.
+- Exames laboratoriais, incluindo hemograma, glicemia, colesterol, exames hormonais e outros. Consulte a equipe para confirmar se um exame específico está disponível e quais são preparo, preço, convênio e prazo.
+- Exame toxicológico ocupacional em Nova Granada.
+- Para exame toxicológico relacionado à CNH, habilitação, carteira de motorista ou renovação, confirme antes de comparecer se há atendimento para a finalidade e categoria, qual laboratório executa a análise, se existe vínculo com laboratório credenciado pela Senatran e como o laudo é registrado. A menção dessas buscas não confirma por si só a disponibilidade do serviço.
+- Consulta com clínico geral: confirme agenda e horários.
+- Medicina do trabalho e exame admissional: consulte as páginas de serviço e confirme os requisitos do atendimento.
+- Sexagem fetal: consulte a equipe para confirmar disponibilidade, período gestacional, preparo e prazo.
 
-### Exames Hormonais
-Dosagens hormonais completas: TSH, T4 livre, cortisol, insulina, testosterona, estradiol, progesterona e outros.
+## Buscas locais relevantes
 
-### Imunologia e Sorologias
-Exames imunológicos com alta sensibilidade: sorologias, anticorpos, autoimunidade e testes alérgicos.
+- Cruz de Prata laboratório em Nova Granada - SP
+- Cruz de Prata laboratório e clínica médica: endereço e telefone
+- Laboratório de exames ou de sangue em Nova Granada
+- Exame de sangue, hemograma, glicemia e colesterol em Nova Granada
+- Exame toxicológico ocupacional em Nova Granada
+- Exame toxicológico para CNH, habilitação ou renovação em Nova Granada: confirmar disponibilidade e requisitos com a equipe
+- Exame admissional e consulta com clínico geral em Nova Granada
+- Sexagem fetal em Nova Granada: confirmar disponibilidade e condições
 
-### Marcadores Tumorais
-PSA, CA 125, CA 19-9, CEA, alfafetoproteína e outros marcadores para rastreamento oncológico.
+## Páginas oficiais
 
-### Consulta Médica
-Atendimento médico especializado em diversas especialidades com diagnóstico preciso e tratamento humanizado.
+- [Página inicial](https://cruzdepratalaboratorio.com.br/)
+- [Catálogo de exames](https://cruzdepratalaboratorio.com.br/exames/)
+- [Exame toxicológico](https://cruzdepratalaboratorio.com.br/exame-toxicologico/)
+- [Sexagem fetal e DNA na gravidez](https://cruzdepratalaboratorio.com.br/sexagem-exame-dna-gravidez/)
+- [Clínica médica](https://cruzdepratalaboratorio.com.br/clinico-geral/)
+- [Medicina do trabalho](https://cruzdepratalaboratorio.com.br/medicina-do-trabalho/)
+- [Exame admissional](https://cruzdepratalaboratorio.com.br/admissional/)
+- [Equipe](https://cruzdepratalaboratorio.com.br/equipe/)
+- [Blog](https://cruzdepratalaboratorio.com.br/blog-cruz-de-prata/)
 
-### Exame Toxicológico
-Exame toxicológico para motoristas profissionais (CLT) e demais finalidades. Resultado rápido e seguro.
+## Artigos publicados
 
-- Página: [Exame Toxicológico em Nova Granada-SP](https://cruzdepratalaboratorio.com.br/exame-toxicologico/)
-- Blog: [Laboratório para Fazer Exame Toxicológico em Nova Granada-SP](https://cruzdepratalaboratorio.com.br/blog-cruz-de-prata/laboratorio-exame-toxicologico-nova-granada)
-
-### Clínico Geral
-Consulta com médico clínico geral em Nova Granada-SP: check-up, avaliação clínica, solicitação de exames e acompanhamento de saúde.
-
-- Página: [Consulta com Clínico Geral em Nova Granada-SP](https://cruzdepratalaboratorio.com.br/clinico-geral/)
-- Blog: [Consulta com Clínico Geral em Nova Granada-SP: Quando Ir e Como Agendar](https://cruzdepratalaboratorio.com.br/blog-cruz-de-prata/clinico-geral-consulta-nova-granada)
-
-### Medicina do Trabalho
-Serviços de medicina do trabalho em Nova Granada-SP: exames ocupacionais, ASO, PPP e saúde do trabalhador para empresas e profissionais.
-
-- Página: [Medicina do Trabalho em Nova Granada-SP](https://cruzdepratalaboratorio.com.br/medicina-do-trabalho/)
-
-### Exame Admissional
-Exame médico admissional em Nova Granada-SP para admissione de funcionários (CLT), exigido pela NR-7. Agendamento rápido com ASO.
-
-- Página: [Exame Admissional em Nova Granada-SP](https://cruzdepratalaboratorio.com.br/admissional/)
-- Blog: [Exame Admissional em Nova Granada-SP: Como Funciona e Como Agendar](https://cruzdepratalaboratorio.com.br/blog-cruz-de-prata/exame-admissional-nova-granada)
-
-### Equipe e E-E-A-T
-Conheça a equipe da Cruz de Prata: biomédicos, farmacêuticos, médicos e técnicos com experiência e qualificação para exames e atendimento humanizado.
-
-- Página: [Equipe e Experiência — Cruz de Prata](https://cruzdepratalaboratorio.com.br/equipe/)
-
-### Bioquímica Clínica
-Perfil lipídico, função renal e hepática, HbA1c, eletrólitos e análises bioquímicas completas.
-
-### Urinálise e Parasitologia
-Exame de urina tipo I, urocultura, parasitológico de fezes e exames do sistema urinário e digestivo.
-
-### Sexagem Fetal & DNA
-Sexagem fetal a partir de 8 semanas e teste de paternidade com sigilo e precisão.
-
-## Diferenciais
-
-- Mais de 800 tipos de exames disponíveis
-- Equipe especializada: biomédicos, farmacêuticos, técnicos de laboratório e enfermagem
-- Alta tecnologia e equipamentos modernos
-- Qualidade certificada com controle interno e externo
-- Atendimento particular e convênios médicos
-- Preço acessível para toda a população
-- Acessibilidade para cadeirantes
-- Ambiente inclusivo e acolhedor
-
-## Formas de Pagamento
-
-Dinheiro, Pix, Cartão de Crédito, Cartão de Débito, Planos de Saúde e Convênios Médicos.
-
-## Links Externos
-
-- Google Maps: https://maps.app.goo.gl/nqeuEpX3BNymrHK7A
-- Facebook: https://www.facebook.com/labcruzdeprata/?locale=pt_BR
-- Instagram: https://www.instagram.com/cruzdepratalaboratorio/
-- WhatsApp: https://wa.me/551732620705
-- Telefone: tel:+551732620707
+- [Exame toxicológico em Nova Granada](https://cruzdepratalaboratorio.com.br/blog-cruz-de-prata/laboratorio-exame-toxicologico-nova-granada)
+- [Laboratório e clínica médica em Nova Granada](https://cruzdepratalaboratorio.com.br/blog-cruz-de-prata/laboratorio-e-clinica-medica-em-granada-sp)
+- [DNA na gravidez](https://cruzdepratalaboratorio.com.br/blog-cruz-de-prata/dna-na-gravidez-granada-sp)
+- [Exame admissional](https://cruzdepratalaboratorio.com.br/blog-cruz-de-prata/exame-admissional-nova-granada)
+- [Consulta com clínico geral](https://cruzdepratalaboratorio.com.br/blog-cruz-de-prata/clinico-geral-consulta-nova-granada)
+- [Jejum para exames de sangue](https://cruzdepratalaboratorio.com.br/blog-cruz-de-prata/quais-exames-de-sangue-precisam-de-jejum)
+- [Novembro Azul e saúde do homem](https://cruzdepratalaboratorio.com.br/blog-cruz-de-prata/novembro-azul-exames-laboratoriais-saude-do-homem)

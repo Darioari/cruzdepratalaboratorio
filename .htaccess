@@ -1,0 +1,11 @@
+# URLs amigáveis para os artigos que são mantidos como arquivos HTML.
+RewriteEngine On
+
+# Redireciona a URL antiga com extensão para a URL canônica sem .html.
+RewriteCond %{THE_REQUEST} \s/+blog-cruz-de-prata/[^\s?]+\.html [NC]
+RewriteRule ^blog-cruz-de-prata/(.+)\.html$ /blog-cruz-de-prata/$1 [R=301,L,NE]
+
+# Serve o arquivo HTML correspondente sem expor a extensão na URL.
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^blog-cruz-de-prata/([^/]+)/?$ blog-cruz-de-prata/$1.html [L]

@@ -1,0 +1,111 @@
+.nav-service-menu { position: relative; }
+.hamburger,
+.sp-menu-toggle {
+  box-sizing: border-box;
+  width: 44px;
+  height: 44px;
+  flex: 0 0 44px;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: 1px solid #dce6e8;
+  border-radius: 50%;
+  background: #fff;
+  color: #263a42;
+  box-shadow: 0 3px 11px rgba(38,58,66,.08);
+}
+.hamburger i,
+.sp-menu-toggle i { font-size: 1rem; line-height: 1; }
+.nav-service-menu > .nav-service-trigger { display: inline-flex; align-items: center; gap: .42rem; }
+.nav-service-chevron { display: inline-block; flex: 0 0 .42rem; width: .42rem; height: .42rem; margin-top: -.2rem; border-right: 1.8px solid currentColor; border-bottom: 1.8px solid currentColor; transform: rotate(45deg); transition: transform .2s ease; }
+.nav-service-menu:hover > .nav-service-trigger .nav-service-chevron,
+.nav-service-menu:focus-within > .nav-service-trigger .nav-service-chevron { transform: rotate(180deg); }
+.nav-service-submenu {
+  position: absolute;
+  top: calc(100% + .45rem);
+  left: 0;
+  z-index: 1100;
+  display: none;
+  min-width: 236px;
+  margin: 0;
+  padding: .45rem;
+  border: 1px solid #dfe7e9;
+  border-radius: 13px;
+  background: #fff;
+  box-shadow: 0 18px 40px rgba(26,48,61,.15);
+  list-style: none;
+}
+.nav-service-submenu::before {
+  position: absolute;
+  top: -.5rem;
+  right: 0;
+  left: 0;
+  height: .55rem;
+  content: "";
+}
+.nav-service-menu:hover > .nav-service-submenu,
+.nav-service-menu:focus-within > .nav-service-submenu { display: grid; gap: .12rem; }
+.nav-service-submenu a {
+  display: flex;
+  align-items: center;
+  min-height: 42px;
+  padding: .65rem .78rem;
+  border-radius: 9px;
+  color: #263a42;
+  font-size: .84rem;
+  font-weight: 550;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.nav-service-submenu a::after { display: none !important; }
+.nav-service-submenu a:hover,
+.nav-service-submenu a[aria-current="page"] { background: #eaf5f6; color: #0d8db7; }
+.nav-service-submenu a[aria-current="page"] { font-weight: 700; }
+
+.mobile-service-menu,
+.sp-mobile-service-menu { width: 100%; border-radius: 10px; background: #edf5f6; }
+.mobile-service-menu > summary,
+.sp-mobile-service-menu > summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: .75rem .9rem;
+  cursor: pointer;
+  font: inherit;
+  font-weight: 600;
+  list-style: none;
+}
+.mobile-service-menu > summary { border-radius: 10px; background: #edf5f6; color: #29363a; }
+.sp-mobile-service-menu > summary { color: var(--sp-ink, #29363a); }
+.mobile-service-menu > summary::-webkit-details-marker,
+.sp-mobile-service-menu > summary::-webkit-details-marker { display: none; }
+.mobile-service-menu > summary::after,
+.sp-mobile-service-menu > summary::after { display: inline-block; flex: 0 0 .42rem; width: .42rem; height: .42rem; margin: -.2rem .2rem 0 0; border-right: 1.8px solid #0d8db7; border-bottom: 1.8px solid #0d8db7; content: ""; transform: rotate(45deg); }
+.mobile-service-menu[open] > summary::after,
+.sp-mobile-service-menu[open] > summary::after { transform: rotate(180deg); }
+.mobile-service-menu > a.nav-service-mobile-link,
+.sp-mobile-service-menu > a.nav-service-mobile-link {
+  display: block;
+  margin: 0 .55rem .42rem;
+  padding: .62rem .75rem;
+  border-radius: 8px;
+  background: rgba(255,255,255,.78);
+  color: #29363a;
+  font-size: .88rem;
+  text-decoration: none;
+}
+.mobile-service-menu > a.nav-service-mobile-link:last-child,
+.sp-mobile-service-menu > a.nav-service-mobile-link:last-child { margin-bottom: .55rem; }
+.mobile-service-menu > a.nav-service-mobile-link:hover,
+.sp-mobile-service-menu > a.nav-service-mobile-link:hover { color: #0d8db7; background: #fff; }
+
+@media (max-width: 1000px) {
+  .nav-service-submenu { display: none !important; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .nav-service-chevron,
+  .nav-service-menu:hover > .nav-service-trigger .nav-service-chevron,
+  .nav-service-menu:focus-within > .nav-service-trigger .nav-service-chevron,
+  .mobile-service-menu[open] > summary::after,
+  .sp-mobile-service-menu[open] > summary::after { transition: none; transform: none; }
+}

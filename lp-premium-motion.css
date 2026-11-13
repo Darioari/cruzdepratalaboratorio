@@ -1,0 +1,22 @@
+/* Motion shared by the site's landing pages, service pages and articles. */
+.lp-motion-item {
+  opacity: 0;
+  transform: translate3d(0, 20px, 0);
+  transition: opacity .68s cubic-bezier(.22,.68,0,1), transform .68s cubic-bezier(.22,.68,0,1);
+  transition-delay: var(--lp-motion-delay, 0ms);
+}
+.lp-motion-item.is-lp-motion-visible {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+.blog-grid > .blog-card,
+.related-grid > .blog-card { animation: none; }
+
+@media (prefers-reduced-motion: reduce) {
+  .lp-motion-item,
+  .lp-motion-item.is-lp-motion-visible {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
