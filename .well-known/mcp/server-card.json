@@ -17,7 +17,7 @@
         },
         {
           "name": "list_services",
-          "description": "Lista os tipos de exames laboratoriais, exames toxicológicos e especialidades médicas atendidas.",
+          "description": "Lista exames laboratoriais, toxicológico ocupacional e consultas confirmadas da Cruz de Prata em Nova Granada.",
           "inputSchema": {
             "type": "object",
             "properties": {}
@@ -25,13 +25,13 @@
         },
         {
           "name": "search_exams",
-          "description": "Busca informações e preparação para exames de sangue/laboratoriais específicos.",
+          "description": "Busca informações e preparo de exames; para toxicológico relacionado à CNH, orienta confirmar disponibilidade e registro do laudo com a equipe.",
           "inputSchema": {
             "type": "object",
             "properties": {
               "query": {
                 "type": "string",
-                "description": "Termo de busca (ex: 'hemograma', 'colesterol', 'jejum')"
+                "description": "Nome do exame ou finalidade. Aceita buscas como toxicológico para CNH, habilitação, carteira de motorista ou renovação; confirme com a equipe a disponibilidade e o registro do laudo."
               }
             },
             "required": [
